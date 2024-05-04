@@ -5,6 +5,7 @@ while True:
 
     operation_list = ["add", "sub", "mul", "div"]
     if operation in operation_list:
+        print("\n------------------------------------------------------------\n")
         break
             
     else: 
@@ -25,11 +26,18 @@ while True:
 
         num_2 = float(input("\nPlease enter second number you'd like to operate.\n\nType Here: ").strip())
         break
-    
+
     except ValueError:
         print("\nYour input is NOT A NUMBER. Please try again\n\n------------------------------------------------------------")
 
 # print result
+# print result for addition
+if operation == "add":
+
+    sum_total = num_1 + num_2        
+
+    print("\n------------------------------------------------------------\n\nThe sum of", num_1, "and", num_2, "is", sum_total)
+
 # loop try again
     # ask the user if wants to try again
     # if eys, loop
