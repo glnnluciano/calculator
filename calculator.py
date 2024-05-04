@@ -55,10 +55,14 @@ def calculator():
 
     #print result for division
     elif operation == "div":
-            
+
+        try:
             quotient = num_1 / num_2
 
             print("\n------------------------------------------------------------\n\nThe quotient of", num_1, "and", num_2, "is", quotient)
+
+        except ZeroDivisionError:
+            print("\n------------------------------------------------------------\n\nError. Your second number/divisor is 0.")
 
 # loop to try again
 while True:
@@ -67,23 +71,20 @@ while True:
 
     while True:
 
-        try:
-            # ask the user if wants to try again
-            user_try_again = input("\nDo you want to try again? y/n\n\nType Here: ")
+        # ask the user if wants to try again
+        user_try_again = input("\nDo you want to try again? y/n\n\nType Here: ")
 
-            # if yes loop
-            if user_try_again.lower() == "y":
-                print("\n")
-                break
+        # if yes loop
+        if user_try_again.lower() == "y":
+            print("\n")
+            break
 
-            # if no, break, print "Thank You!" and terminate
-            elif user_try_again.lower() == "n":
-                end_of_program = "Thank You!"
-                print("\n------------------------------------------------------------\n", end_of_program.center(55, " "),"\n------------------------------------------------------------\n")
-                exit() 
-
-            # valueerror
-        except ValueError:
-            print("\n------------------------------------------------------------\nInvalid Input. Please choose from the given options.\n")
-
-# add error handling
+        # if no, break, print "Thank You!" and terminate
+        elif user_try_again.lower() == "n":
+            end_of_program = "Thank You!"
+            print("\n------------------------------------------------------------\n", end_of_program.center(55, " "),"\n------------------------------------------------------------\n")
+            exit() 
+        
+        # else, invalid input
+        else:
+            print("\n------------------------------------------------------------\n\nInvalid Input. Please choose from the given options.")
