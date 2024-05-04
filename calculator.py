@@ -38,6 +38,13 @@ if operation == "add":
 
     print("\n------------------------------------------------------------\n\nThe sum of", num_1, "and", num_2, "is", sum_total)
 
+# print result for subtraction
+elif operation == "sub":
+
+        difference = num_1 - num_2
+
+        print("\n------------------------------------------------------------\n\nThe difference of", num_1, "and", num_2, "is", difference)
+
 # loop try again
     # ask the user if wants to try again
     # if eys, loop
