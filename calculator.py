@@ -88,3 +88,5 @@ while True:
         # else, invalid input
         else:
             print("\n------------------------------------------------------------\n\nInvalid Input. Please choose from the given options.")
+
+# END OF PROGRAM
