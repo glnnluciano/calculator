@@ -41,10 +41,18 @@ if operation == "add":
 # print result for subtraction
 elif operation == "sub":
 
-        difference = num_1 - num_2
+    difference = num_1 - num_2
 
-        print("\n------------------------------------------------------------\n\nThe difference of", num_1, "and", num_2, "is", difference)
+    print("\n------------------------------------------------------------\n\nThe difference of", num_1, "and", num_2, "is", difference)
 
+#print result for multiplication
+elif operation == "mul":
+
+    product = num_1 * num_2
+
+    print("\n------------------------------------------------------------\n\nThe product of", num_1, "and", num_2, "is", product)
+
+#print result for division
 # loop try again
     # ask the user if wants to try again
     # if eys, loop
