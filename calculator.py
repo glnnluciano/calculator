@@ -53,6 +53,12 @@ elif operation == "mul":
     print("\n------------------------------------------------------------\n\nThe product of", num_1, "and", num_2, "is", product)
 
 #print result for division
+elif operation == "div":
+        
+        quotient = num_1 / num_2
+
+        print("\n------------------------------------------------------------\n\nThe quotient of", num_1, "and", num_2, "is", quotient)
+
 # loop try again
     # ask the user if wants to try again
     # if eys, loop
