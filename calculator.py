@@ -1,6 +1,6 @@
 while True:    
     # ask what operation
-    operation = str(input("What operation would you like to perform?\n\nType the word:\n'ADD' for Addition \n'SUB' for Subtraction \n'MUL' for Multiplication \n'DIV' for Division\n\nType Here: ").strip())
+    operation = input("What operation would you like to perform?\n\nType the word:\n'ADD' for Addition \n'SUB' for Subtraction \n'MUL' for Multiplication \n'DIV' for Division\n\nType Here: ")
     operation = operation.lower().strip()
 
     operation_list = ["add", "sub", "mul", "div"]
@@ -11,6 +11,24 @@ while True:
         print("\n------------------------------------------------------------\n\nInvalid Input. Please choose from the given options.\n")
 
 # ask for num_1 and num_2
+while True:
+    try:  
+
+        num_1 = float(input("Enter first numbers you'd like to operate.\n\nType Here: ").strip())
+        break
+
+    except ValueError:
+        print("\nYour input is NOT A NUMBER. Please try again\n\n------------------------------------------------------------\n")
+
+while True:   
+    try:
+
+        num_2 = float(input("\nPlease enter second number you'd like to operate.\n\nType Here: ").strip())
+        break
+    
+    except ValueError:
+        print("\nYour input is NOT A NUMBER. Please try again\n\n------------------------------------------------------------")
+
 # print result
 # loop try again
     # ask the user if wants to try again
